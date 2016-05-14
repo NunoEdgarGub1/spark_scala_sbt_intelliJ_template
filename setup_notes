@@ -1,0 +1,12 @@
+This project was setup using the following steps:
+- create an SBT project;
+- define dependencies in SBT as per-usual (this also gives us intellisense);
+- use 'sbt clean package' from the termain or the SBT console to create the JAR we can use with 'spark-submit' and our bash command;
+- alternatively, we can use the 'CreateSparkJAR' run configuration to run the above instead;
+- to compile and run using scalac and java from within IntelliJ, add reference to spark assembly JAR (either via Maven or Spark locally);
+- setup Test configuration and hit 'run';
+- in the above, the JVM paramter '-Dspark.master=local[2]' has been set in the run configuration to avoid having to set it in the app.
+
+IntelliJ IDEA plugins in use:
+- Scala;
+- SBT.
